@@ -1,0 +1,45 @@
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    max-width: 1110px;
+    width: calc(100vw - 48px);
+    margin: 100px auto;
+
+}
+
+
+.cards_ct {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    width: 100%;
+
+}
+
+.container  .cards_ct div{
+    width: 100%;
+    height: 156px;
+    background-color: violet;
+    border-radius: 12px;
+
+    text-align: center;
+    line-height: 156px;
+
+
+}
+
+
+
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
