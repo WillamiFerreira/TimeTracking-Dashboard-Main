@@ -1,3 +1,4 @@
+import Card from './Card';
 import Perfil from './Perfil';
 import './styles/container.css'
 
@@ -6,14 +7,12 @@ const Container = () => {
         <div className={`container`}>
             <Perfil />
             <div className='cards_ct'>
-                <div>
-                    <div id="stats_bg"></div>
-                </div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-                <div>5</div>
-                <div>6</div>
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
             </div>
         </div>
     );

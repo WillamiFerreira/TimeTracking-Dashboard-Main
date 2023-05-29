@@ -1,28 +1,30 @@
-@media screen and (min-width: 500px){
+@media screen and (min-width: 480px){
+
+    .perfil_bg{
+        height: 256px !important;
+        max-width: 536px;
+
+    }
+
     .container .cards_ct{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 4px;
-
+        gap: 28px;
     }
 
-    .container  .cards_ct div {
-        background-color: red !important;
+    .container .cards_ct div {
         height: 256px !important;
     }
 
-    .perfil_bg{
-        background-color:#282e6c;
-        border-radius: 12px;
-        height: 206px ;
+    #stats_bg{
+        height: 216px !important;
         width: 100%;
-        max-width: inherit;
     }
-    
+
 }
 
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 992px){
 
     .container{
         display: flex;
@@ -30,7 +32,6 @@
     }
 
     .container > div:first-child{
-        background-color:rgb(36, 174, 36);
         height: 516px !important;
         width: 100%;
     }
@@ -42,8 +43,7 @@
 
     }
 
-    .container  .cards_ct div {
-        background-color: red !important;
+    .container .cards_ct div {
         height: 244px !important;
         width: 256px !important;
     }

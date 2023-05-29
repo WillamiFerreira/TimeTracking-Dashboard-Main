@@ -1,3 +1,25 @@
+:root{
+  --primary-perfil-card: hsla(246, 80%, 60%, 1);
+  --primary-social-card: hsla(264, 64%, 53%, 1);
+  --primary-exercise-card: hsla(145, 58%, 55%, 1);
+  --primary-work-card: hsla(15, 100%, 70%, 1);
+  --primary-play-card: hsla(195, 74%, 62%, 1);
+  --primary-self-care-card: hsla(43, 84%, 65%, 1);
+  --primary-study-card: hsla(348, 100%, 68%, 1);
+
+  --page-bg: hsla(226, 43%, 10%, 1);
+  --stats-bg: hsla(235, 46%, 29%, 1);
+  --desaturad-blue: hsla(235, 45%, 61%, 1);
+  --pale-blue: hsla(236, 100%, 87%, 1);
+
+  --main-font: 'Rubik', sans-serif;
+}
+
+html{
+  background-color: var(--page-bg);
+}
+
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -8,5 +30,6 @@
 body{
   width: 100vw;
   min-height: 100vh ;
+  font-family: var(--main-font);
 }
 

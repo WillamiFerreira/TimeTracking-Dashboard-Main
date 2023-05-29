@@ -9,6 +9,8 @@
     width: calc(100vw - 48px);
     margin: 100px auto;
 
+    background-color: var(--page-bg);
+
 }
 
 
@@ -33,7 +35,6 @@
     width: 100%;
     max-width: 333px;
     height: 156px;
-    background-color: violet;
     border-radius: 12px;
 
     text-align: center;
@@ -41,9 +42,33 @@
 
 }
 
-.container  .cards_ct div:nth-child(1){
-    background-color: #FF8C66;
+.container .cards_ct div:nth-child(1){
+    background-color: var(--primary-work-card);
 }
+
+.container .cards_ct div:nth-child(2){
+    background-color: var(--primary-play-card);
+}
+
+.container .cards_ct div:nth-child(3){
+    background-color: var(--primary-study-card);
+}
+
+.container .cards_ct div:nth-child(4){
+    background-color: var(--primary-exercise-card);
+}
+
+.container .cards_ct div:nth-child(5){
+    background-color: var(--primary-social-card);
+}
+
+.container .cards_ct div:nth-child(6){
+    background-color: var(--primary-self-care-card);
+}
+
+
+
+
 
 
 
