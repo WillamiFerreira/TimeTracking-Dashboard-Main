@@ -10,6 +10,14 @@
         background-color: red !important;
         height: 256px !important;
     }
+
+    .perfil_bg{
+        background-color:#282e6c;
+        border-radius: 12px;
+        height: 206px ;
+        width: 100%;
+        max-width: inherit;
+    }
     
 }
 

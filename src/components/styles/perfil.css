@@ -3,6 +3,7 @@
     border-radius: 12px;
     height: 206px ;
     width: 100%;
+    max-width: 333px;
 }
 
 #user_info{
