@@ -6,7 +6,9 @@ const Container = () => {
         <div className={`container`}>
             <Perfil />
             <div className='cards_ct'>
-                <div>1</div>
+                <div>
+                    <div id="stats_bg"></div>
+                </div>
                 <div>2</div>
                 <div>3</div>
                 <div>4</div>
