@@ -17,7 +17,10 @@
 
 html{
   background-color: var(--page-bg);
+  color: white;
 }
+
+
 
 
 *{
