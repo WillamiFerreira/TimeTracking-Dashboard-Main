@@ -1,0 +1,8 @@
+button{
+    border: none;
+    background-color: var(--stats-bg);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--desaturad-blue);
+}
+

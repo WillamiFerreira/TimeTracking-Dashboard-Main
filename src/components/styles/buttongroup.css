@@ -1,0 +1,8 @@
+#btns{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    height: calc(100% - 126px);
+    padding: 0 15px;
+}

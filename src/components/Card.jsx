@@ -1,11 +1,11 @@
 import './styles/card.css'
 
-const Card = ({current, previous}) => {
+const Card = ({current, previous, title}) => {
     return (
         <div className='card'>
             <div id="stats_bg">
                     <div className='card_name'>
-                        <p>Work</p> <p>...</p>
+                        <p>{title}</p> <p>...</p>
                     </div>
                     <div className='stats'>
                         <p>{current}hrs</p>

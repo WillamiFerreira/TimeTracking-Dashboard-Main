@@ -2,14 +2,10 @@ import './styles/perfil.css'
 
 import perfil from '../assets/image-jeremy.png'
 import Button from './Button';
-
-import data from '../../data.json';
-import { useEffect } from 'react';
-
+import ButtonGroup from './ButtonGroup';
 
 const Perfil = ({getData}) => {
 
-    
     function GetData(e){
         getData(e)
 
@@ -25,9 +21,7 @@ const Perfil = ({getData}) => {
                 </span>
             </div>
             <div id='btns'>
-                <Button id='1' text='Daily' onClick={GetData} />
-                <Button id='2' text='Weekly' onClick={GetData} />
-                <Button id='3' text='Monthly' onClick={GetData} />
+                <ButtonGroup onClick={GetData}/>
             </div>
             
         </div>

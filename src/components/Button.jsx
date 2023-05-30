@@ -1,3 +1,5 @@
+import './styles/button.css'
+
 const Button = ({text, id, onClick}) => {
     return (
         <div>
