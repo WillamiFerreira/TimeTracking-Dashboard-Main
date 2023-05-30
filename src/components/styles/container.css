@@ -22,13 +22,8 @@
     width: 100%;
 
 }
-#stats_bg{
-    height: 118px;
-    width: 100%;
-    background-color: #282E6C;
-}
 
-.container  .cards_ct div{
+.container  .cards_ct > div{
     display: flex;
     flex-direction: column-reverse;
 
@@ -37,8 +32,8 @@
     height: 156px;
     border-radius: 12px;
 
-    text-align: center;
-    line-height: 156px;
+    color: red;
+
 
 }
 
@@ -65,11 +60,6 @@
 .container .cards_ct div:nth-child(6){
     background-color: var(--primary-self-care-card);
 }
-
-
-
-
-
 
 
 

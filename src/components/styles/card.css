@@ -1,5 +1,41 @@
 #stats_bg{
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
     height: 118px;
     width: 100%;
+    padding: 28px 24px 26px 24px;
     background-color: var(--stats-bg);
+
+
+}
+
+div.card_name{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--stats-bg) !important;
+
+}
+div.card_name p:first-child{
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+}
+
+
+
+div.stats{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--stats-bg) !important;
+    border-radius: 12px 12px 0 0;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4px;
+}
+
+div.stats p:first-child{
+    font-weight: 300;
+    font-size: 32px;
+    color: var(--pale-blue);
 }
