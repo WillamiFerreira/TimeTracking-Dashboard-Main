@@ -22,6 +22,11 @@ div.card_name p:first-child{
     color: white;
 }
 
+div.card_name > img {
+    width: 18px;
+    height: 4px;
+}
+
 
 
 div.stats{
