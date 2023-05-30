@@ -14,6 +14,7 @@ div.card_name{
     display: flex;
     justify-content: space-between;
     background-color: var(--stats-bg) !important;
+    align-items: center;
 
 }
 div.card_name p:first-child{
@@ -36,7 +37,7 @@ div.stats{
     border-radius: 12px 12px 0 0;
     justify-content: space-between;
     align-items: center;
-    margin-top: 4px;
+    margin-top: 8px;
 }
 
 div.stats p:first-child{
