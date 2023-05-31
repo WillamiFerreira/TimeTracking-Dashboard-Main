@@ -23,6 +23,10 @@
         line-height: 24px;
     }
 
+    #user_img{
+        width: 78px;
+    }
+
     #user_name {
         font-weight: 300;
         font-size: 34px;
