@@ -8,12 +8,12 @@ import database from '../../data.json'
 const Container = () => {
 
     const [data, setData] = useState({ //very hard coded unfortunally :(
-            Exercise: {current: 1, previous: 1, title: "Exercise"},
-            Play: {current: 1, previous: 2, title: "Play"},
-            Self_Care:{current: 0, previous: 1, title: "Self Care"},
-            Social: {current: 1, previous: 3, title: "Social"},
-            Study:{current: 0, previous: 1, title: "Study"},
-            Work: {current: 5, previous: 7, title: "Work"},
+            Exercise: {current: 1, previous: 1, title: "Exercise", period: "Day"},
+            Play: {current: 1, previous: 2, title: "Play", period: "Day"},
+            Self_Care:{current: 0, previous: 1, title: "Self Care", period: "Day"},
+            Social: {current: 1, previous: 3, title: "Social", period: "Day"},
+            Study:{current: 0, previous: 1, title: "Study", period: "Day"},
+            Work: {current: 5, previous: 7, title: "Work", period: "Day"},
         });
 
     function btn_perso(e){
@@ -28,7 +28,7 @@ const Container = () => {
                 btn.classList.remove('active')
             }
         }
-        console.log(btns)
+        //console.log(btns)
     }
 
     function GetData(e){
@@ -39,9 +39,11 @@ const Container = () => {
                 var daily = {}
                 database.map(area => {
                     daily[`${area.title}`] = {
+                    ["title"]: area.title,
                     ["current"]: area.timeframes.daily.current,
                     ["previous"]: area.timeframes.daily.previous,
-                    ["title"]: area.title
+                    ["period"]: 'Day'
+                    
                 };
                 })
                 setData(daily)
@@ -53,7 +55,9 @@ const Container = () => {
                     weekly[`${area.title}`] = {
                         ["title"] : area.title,
                         ["current"]: area.timeframes.weekly.current,
-                        ["previous"]: area.timeframes.weekly.previous 
+                        ["previous"]: area.timeframes.weekly.previous,
+                        ["period"]: 'Week'
+                        
                     }
                 })
                 setData(weekly)
@@ -65,19 +69,23 @@ const Container = () => {
                     monthly[`${area.title}`] = {
                         ["title"] : area.title,
                         ["current"]: area.timeframes.monthly.current,
-                        ["previous"]: area.timeframes.monthly.previous 
+                        ["previous"]: area.timeframes.monthly.previous,
+                        ["period"]: 'Month'
                     }
                 })
                 setData(monthly)
                 break;
-
-            
         }
 
+
         btn_perso(e)
-
-
     }
+
+
+    console.log(data);
+
+
+
     return (
         <div className={`container`}>
             <Perfil getData={GetData} />
@@ -86,32 +94,38 @@ const Container = () => {
                 <Card 
                 current={data.Work.current} 
                 previous={data.Work.previous} 
-                title={data.Work.title} />
+                title={data.Work.title}
+                period={data.Work.period} />
 
                 <Card 
                 current={data.Play.current} 
                 previous={data.Play.previous} 
-                title={data.Play.title}/>
+                title={data.Play.title}
+                period={data.Work.period}/>
                 
                 <Card 
                 current={data.Study.current} 
                 previous={data.Study.previous} 
-                title={data.Study.title}/>
+                title={data.Study.title}
+                period={data.Work.period}/>
 
                 <Card 
                 current={data.Exercise.current} 
                 previous={data.Exercise.previous} 
-                title={data.Exercise.title}/>
+                title={data.Exercise.title}
+                period={data.Work.period}/>
 
                 <Card 
                 current={data.Social.current} 
                 previous={data.Social.previous} 
-                title={data.Social.title}/>
+                title={data.Social.title}
+                period={data.Work.period}/>
 
                 <Card 
                 current={data.Self_Care.current} 
                 previous={data.Self_Care.previous} 
-                title={data.Self_Care.title}/>
+                title={data.Self_Care.title}
+                period={data.Work.period}/>
             </div>
         </div>
     );

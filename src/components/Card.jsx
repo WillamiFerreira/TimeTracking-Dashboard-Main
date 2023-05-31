@@ -1,7 +1,7 @@
 import './styles/card.css'
 import dots from '../assets/icon-ellipsis.svg'
 
-const Card = ({current, previous, title}) => {
+const Card = ({current, previous, title, period}) => {
     return (
         <div className='card'>
 
@@ -12,7 +12,7 @@ const Card = ({current, previous, title}) => {
 
                     <div className='stats'>
                         <p>{current}hrs</p>
-                        <p>Last Week - {previous}hrs</p>
+                        <p>Last {period} - {previous}hrs</p>
                     </div>   
             </div>
 
