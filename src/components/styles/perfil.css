@@ -2,6 +2,8 @@ p{
     color: var(--pale-blue);
 }
 
+
+
 span{
     display: flex;
     flex-direction: column;

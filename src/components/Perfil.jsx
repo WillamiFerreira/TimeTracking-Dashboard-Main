@@ -21,7 +21,7 @@ const Perfil = ({getData}) => {
                 </span>
             </div>
             
-            <div id='btns'>
+            <div>
                 <ButtonGroup onClick={GetData}/>
             </div>
             
