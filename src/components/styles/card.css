@@ -1,13 +1,19 @@
+.card{
+    border: 3px solid black;
+    box-shadow: 8px 8px 0px 0px hsla(0, 0%, 0%, 1);
+
+}
+
 #stats_bg{
     display: flex;
     flex-direction: column;
-    border-radius: 12px;
+    border-radius: 0 0 8px 8px;
     height: 118px;
     width: 100%;
     padding: 28px 24px 26px 24px;
     background-color: var(--stats-bg);
 
-
+    border-top: 3px solid black;
 }
 
 div.card_name{
@@ -19,7 +25,7 @@ div.card_name{
 }
 div.card_name p:first-child{
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     color: white;
 }
 
@@ -41,7 +47,13 @@ div.stats{
 }
 
 div.stats p:first-child{
-    font-weight: 300;
-    font-size: 32px;
+    font-weight: 700;
+    font-size: 34px;
+    color: white;
+}
+
+div.stats p:last-child{
+    font-weight: 400;
+    font-size: 16px;
     color: var(--pale-blue);
 }

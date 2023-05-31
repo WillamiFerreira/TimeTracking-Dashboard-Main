@@ -1,8 +1,28 @@
 button{
-    border: none;
-    background-color: var(--stats-bg);
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 600;
     color: var(--desaturad-blue);
+
+    font-family: var(--main-font);
+
+    color: #3d3d3d;
+    background-color: #F1C65B;
+    border: 2px solid #000000;
+    box-shadow: 4px 4px 0px #000000;
+    border-radius: 10px;
+    padding: 8px;
+    transition: .2s ease-in;
+
+
+}
+
+.active{
+    color: black;
+    background-color: #F1C65B;
+    border: 2px solid #000000;
+    box-shadow: none;
+
+    border-radius: 10px;
+    transition: .2s ease-out;
 }
 

@@ -16,6 +16,21 @@ const Container = () => {
             Work: {current: 5, previous: 7, title: "Work"},
         });
 
+    function btn_perso(e){
+        const btns = document.getElementsByTagName('button');
+        //console.log(btns)
+
+        for (let btn of btns) {
+            //console.log(btn)
+            if (btn.id == e.target.id) {
+                btn.classList.add('active')
+            } else {
+                btn.classList.remove('active')
+            }
+        }
+        console.log(btns)
+    }
+
     function GetData(e){
 
         switch (e.target.id ) {
@@ -55,7 +70,11 @@ const Container = () => {
                 })
                 setData(monthly)
                 break;
+
+            
         }
+
+        btn_perso(e)
 
 
     }
