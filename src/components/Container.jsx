@@ -81,52 +81,43 @@ const Container = () => {
         btn_perso(e)
     }
 
-
-    console.log(data);
-
-
-
+    
     return (
         <div className={`container`}>
-            <Perfil getData={GetData} />
-
-            <div className='cards_ct'>
-                <Card 
-                current={data.Work.current} 
-                previous={data.Work.previous} 
-                title={data.Work.title}
-                period={data.Work.period} />
-
-                <Card 
-                current={data.Play.current} 
-                previous={data.Play.previous} 
-                title={data.Play.title}
-                period={data.Work.period}/>
+                <Perfil getData={GetData} />
+                <div className='cards_ct'>
+                    <Card
+                    current={data.Work.current}
+                    previous={data.Work.previous}
+                    title={data.Work.title}
+                    period={data.Work.period} />
+                    <Card
+                    current={data.Play.current}
+                    previous={data.Play.previous}
+                    title={data.Play.title}
+                    period={data.Work.period}/>
                 
-                <Card 
-                current={data.Study.current} 
-                previous={data.Study.previous} 
-                title={data.Study.title}
-                period={data.Work.period}/>
-
-                <Card 
-                current={data.Exercise.current} 
-                previous={data.Exercise.previous} 
-                title={data.Exercise.title}
-                period={data.Work.period}/>
-
-                <Card 
-                current={data.Social.current} 
-                previous={data.Social.previous} 
-                title={data.Social.title}
-                period={data.Work.period}/>
-
-                <Card 
-                current={data.Self_Care.current} 
-                previous={data.Self_Care.previous} 
-                title={data.Self_Care.title}
-                period={data.Work.period}/>
-            </div>
+                    <Card
+                    current={data.Study.current}
+                    previous={data.Study.previous}
+                    title={data.Study.title}
+                    period={data.Work.period}/>
+                    <Card
+                    current={data.Exercise.current}
+                    previous={data.Exercise.previous}
+                    title={data.Exercise.title}
+                    period={data.Work.period}/>
+                    <Card
+                    current={data.Social.current}
+                    previous={data.Social.previous}
+                    title={data.Social.title}
+                    period={data.Work.period}/>
+                    <Card
+                    current={data.Self_Care.current}
+                    previous={data.Self_Care.previous}
+                    title={data.Self_Care.title}
+                    period={data.Work.period}/>
+                </div>
         </div>
     );
 };
