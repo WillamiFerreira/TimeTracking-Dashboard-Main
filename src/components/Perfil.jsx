@@ -12,7 +12,7 @@ const Perfil = ({getData}) => {
     return (
         <div id="perfil_ct">
             <div className='perfil_bg'>
-                <div id="user_info">
+                <div id="user_info" role='User infomations'>
                     <img id="user_img" src={perfil} alt="user perfil image" />
                     <span>
                         <p>Report for</p>

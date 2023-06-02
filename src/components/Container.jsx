@@ -85,7 +85,7 @@ const Container = () => {
     return (
         <div className={`container`}>
                 <Perfil getData={GetData} />
-                <div className='cards_ct'>
+                <div className='cards_ct' role='Stats area'>
                     <Card
                     current={data.Work.current}
                     previous={data.Work.previous}
