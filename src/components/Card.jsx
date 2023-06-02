@@ -4,8 +4,9 @@ import dots from '../assets/icon-ellipsis.svg'
 const Card = ({current, previous, title, period}) => {
     return (
         <div className='card'>
-            <div className="stats_bg">
-                    <div id='card_name'>
+
+            <div id="stats_bg">
+                    <div className='card_name'>
                         <p>{title}</p> <img src={dots} alt="dots" />
                     </div>
 
